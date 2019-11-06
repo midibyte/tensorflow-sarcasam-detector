@@ -23,9 +23,10 @@ with open("test_nonGraded.jsonlist",'r') as F:
 
 outFile = open("grade_"+studentName+".txt", 'w')
 
-print("Loading w2v pretrained vectors...")
-w2vModel = word2vec.KeyedVectors.load_word2vec_format\
- 	("GoogleNews-vectors-negative300.bin",binary=True)
+# print("Loading w2v pretrained vectors...")
+# w2vModel = word2vec.KeyedVectors.load_word2vec_format\
+#  	("GoogleNews-vectors-negative300.bin",binary=True)
+w2vModel = None
 
 def prnt(S):
 	global outFile

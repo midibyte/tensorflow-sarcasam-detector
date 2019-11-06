@@ -1,3 +1,4 @@
 
 .DS_Store
 train.jsonlist
+GoogleNews-vectors-negative300.bin
