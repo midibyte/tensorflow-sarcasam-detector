@@ -35,15 +35,14 @@ embeddings = None
 def trainSarcasm(Model, trainFile):
 	global model
 	global embeddings
-	# model = Model
-	#TODO: process training file here
+
 	#load in the json list file into a list of dictionaries
 	jsonlist = list()
 	f = open(trainFile, "r")
 	for line in f:
 		jsonlist.append(json.loads(line))
 	
-	#convert words to vectors
+	#convert inputs to lists
 	comment_vectors = list()
 	parent_vectors = list()
 	labels = list()
@@ -52,31 +51,9 @@ def trainSarcasm(Model, trainFile):
 	ups = list()
 	downs = list()
 
-	# #get information from dicts 
-	# for d in jsonlist:
-	# 	w_vec_list = list()
-	# 	for w in d["comment"]:
-	# 		vector = model[w]
-	# 		w_vec_list.append(vector)
-	# 	#comment vector - mean of word vectors
-	# 	s_vec = sum(w_vec_list) / len(w_vec_list)
-	# 	comment_vectors.append(s_vec)
-		
-	# 	#parent comment vector
-	# 	parent_w_vec_list = list()
-	# 	for w in d["parent_comment"]:
-	# 		vector = model[w]
-	# 		parent_w_vec_list.append(vector)
-	# 	parent_vec = sum(parent_w_vec_list) / len(parent_w_vec_list)
-	# 	parent_vectors.append(parent_vec)
-	# 	labels.append(d["label"])
-	# 	authors.append(model[d["author"]])
-	# 	subreddit.append( model[ d ["subreddit"] ] )
-	# 	ups.append( d["ups"] )
-	# 	downs.append( d["downs"] )
 
-	#get information from dicts 
-	print("making lists from dicts from json")
+	#get information from dicts to make lists
+	# print("making lists from dicts from json")
 	for d in jsonlist:
 
 		comment_vectors.append( d["comment"] )
@@ -87,37 +64,32 @@ def trainSarcasm(Model, trainFile):
 		subreddit.append( d ["subreddit"] )
 		ups.append( d["ups"] )
 		downs.append( d["downs"] )
-	# print("making 2d vector")
-	#need to make a 2d vector to pass to keras
-	# input_vec = np.column_stack( (comment_vectors, parent_vectors, labels, authors, subreddit, ups, downs) )
 
-	# print(np.shape(input_vec))
-	print("making dataset from lists")
-	#make a dataset to pass to keras
+	# print("making dataset from lists")
+
+	#setup data to pass into model
 	
 	train_comments = np.asarray( comment_vectors[: math.floor( len(comment_vectors) * 0.7 ) ] )
 	test_comments = np.asarray( comment_vectors[ math.floor( len(comment_vectors) * 0.7 ) + 1 : ] )
 	train_labels = np.asarray( labels[ : math.floor( len(labels) * 0.7 ) ] )
 	test_labels = np.asarray( labels[ math.floor( len(labels) * 0.7 ) + 1 : ] )
 
-	train_subreddit = np.asarray( subreddit[: math.floor( len(comment_vectors) * 0.7 ) ] )
-	test_subreddit = np.asarray( subreddit[ math.floor( len(comment_vectors) * 0.7 ) + 1 : ] )
-
+	#make (up, down) tuple and append to list to pass to model input
 	updown = list()
 	for u, d in zip(ups, downs):
 		updown.append( (u, d) )
-	# updown = np.asarray(updown)
 	train_updown = np.asarray( updown[: math.floor( len(updown) * 0.7 ) ] )
 	test_updown = np.asarray( updown[ math.floor( len(updown) * 0.7 ) + 1 : ] )
 
-	print(np.shape(updown))
-	print (np.shape( train_comments ))
-	print (np.shape(test_comments))
-	print (np.shape(train_labels))
-	print (np.shape(test_labels))
+	# print(np.shape(updown))
+	# print (np.shape( train_comments ))
+	# print (np.shape(test_comments))
+	# print (np.shape(train_labels))
+	# print (np.shape(test_labels))
 
 
-	# code adapted from tutorial at https://github.com/tensorflow/hub/blob/master/examples/colab/tf2_text_classification.ipynb
+	# code below adapted from tutorial at https://github.com/tensorflow/hub/blob/master/examples/colab/tf2_text_classification.ipynb
+	# and https://keras.io/getting-started/sequential-model-guide/#specifying-the-input-shape
 	
 	print("starting keras")
 	
@@ -126,34 +98,33 @@ def trainSarcasm(Model, trainFile):
 	embeddings = "https://tfhub.dev/google/tf2-preview/gnews-swivel-20dim-with-oov/1"
 	# input layer
 	hub_layer = hub.KerasLayer(embeddings, output_shape=[20], input_shape=[], dtype=tf.string, trainable=True)
-	hub_layer_1 = hub.KerasLayer(embeddings, output_shape=[20], input_shape=[], dtype=tf.string, trainable=True)
 
-	# hub_layer(train_comments[:3])
 
 	# setting up keras model
 	model = tf.keras.Sequential()
 	model.add(hub_layer)
 	model.add(tf.keras.layers.Dense(16, activation='relu'))
 	model.add(tf.keras.layers.Dense(4, activation='relu'))
-	# model.add(tf.keras.layers.Dense(1, activation='sigmoid'))
+	model.add(tf.keras.layers.Dropout(0.25))
 
-	# #train on subreddits here
-	# model_s = tf.keras.Sequential()
-	# model_s.add(hub_layer_1)
-	# model_s.add(tf.keras.layers.Dense(16, activation='relu'))
-	# # model_s.add(tf.keras.layers.Dense(1, activation='sigmoid'))
-
+	#model that takes up. down as an input
 	model_inout = tf.keras.Sequential()
 	model_inout.add(tf.keras.layers.Dense(4, activation='relu', input_shape=(2,)))
+	model_inout.add(tf.keras.layers.Dropout(0.25))
 
+	#merge the comment model and the updown model into one layer
 	mergedOut = keras.layers.Add()([model.output, model_inout.output])
-	mergedOut_1 = keras.layers.Dense(8, activation='relu')(mergedOut)
-	mergedOut_2 = keras.layers.Dense(1, activation='sigmoid')(mergedOut_1)
+	#prevent overfitting
+	dropout = keras.layers.Dropout(0.2)(mergedOut)
+	mergedOut_1 = keras.layers.Dense(8, activation='relu')(dropout)
+	mergedOut_2 = keras.layers.Dense(4, activation='relu')(mergedOut_1)
+	mergedOut_3 = keras.layers.Dense(1, activation='sigmoid')(mergedOut_2)
 
-	final_model = keras.models.Model( [model.input, model_inout.input], mergedOut_2 )
+	#description of the final model's inputs and outputs
+	final_model = keras.models.Model( [model.input, model_inout.input], mergedOut_3 )
 
 	# prints a summary of the layers of the NN
-	final_model.summary()
+	# final_model.summary()
 
 	final_model.compile(optimizer='adam',
               loss='binary_crossentropy',
@@ -162,54 +133,58 @@ def trainSarcasm(Model, trainFile):
 
 
 	# train the model
-	# low number of epochs for testing
+	# low number of epochs for time constraints
 	history = final_model.fit([train_comments, train_updown],
                     train_labels,
-                    epochs=6,
-                    batch_size=512,
+                    epochs=100,
+                    batch_size=51200,
                     validation_data=([test_comments, test_updown], test_labels),
                     verbose=1)
+
+	#this code prints a chart
 	
-	history_dict = history.history
-	history_dict.keys()
+	# history_dict = history.history
+	# history_dict.keys()
 
-	acc = history_dict['accuracy']
-	val_acc = history_dict['val_accuracy']
-	loss = history_dict['loss']
-	val_loss = history_dict['val_loss']
+	# acc = history_dict['accuracy']
+	# val_acc = history_dict['val_accuracy']
+	# loss = history_dict['loss']
+	# val_loss = history_dict['val_loss']
 
-	epochs = range(1, len(acc) + 1)
+	# epochs = range(1, len(acc) + 1)
 
-	# "bo" is for "blue dot"
-	plt.plot(epochs, loss, 'bo', label='Training loss')
-	# b is for "solid blue line"
-	plt.plot(epochs, val_loss, 'b', label='Validation loss')
-	plt.title('Training and validation loss')
-	plt.xlabel('Epochs')
-	plt.ylabel('Loss')
-	plt.legend()
+	# # "bo" is for "blue dot"
+	# plt.plot(epochs, loss, 'bo', label='Training loss')
+	# # b is for "solid blue line"
+	# plt.plot(epochs, val_loss, 'b', label='Validation loss')
+	# plt.title('Training and validation loss')
+	# plt.xlabel('Epochs')
+	# plt.ylabel('Loss')
+	# plt.legend()
 
-	plt.show()
+	# plt.show()
 
-	plt.clf()   # clear figure
+	# plt.clf()   # clear figure
 
-	plt.plot(epochs, acc, 'bo', label='Training acc')
-	plt.plot(epochs, val_acc, 'b', label='Validation acc')
-	plt.title('Training and validation accuracy')
-	plt.xlabel('Epochs')
-	plt.ylabel('Accuracy')
-	plt.legend()
+	# plt.plot(epochs, acc, 'bo', label='Training acc')
+	# plt.plot(epochs, val_acc, 'b', label='Validation acc')
+	# plt.title('Training and validation accuracy')
+	# plt.xlabel('Epochs')
+	# plt.ylabel('Accuracy')
+	# plt.legend()
 
-	plt.show()
+	# plt.show()
 
 	model = final_model
 
 def testSarcasm(comment):
 
+	#was used for testing
 	# exit()
 	# quit()
 
-	#need to pass a nparray to predict
+	#need to pass a nparray to predict method
+	# recreate in the same input format as before then pass to predict
 	temp_list = list()
 	temp_list_2 = list()
 
@@ -218,8 +193,7 @@ def testSarcasm(comment):
 	temp_np = np.asarray(temp_list)
 	temp_np_2 = np.asarray(temp_list_2)
 
-
-
+	#convert a probability to a boolean
 	val = model.predict( [temp_np, temp_np_2] )
 	if val[0] > 0.5:
 		return True
