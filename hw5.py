@@ -100,6 +100,17 @@ def trainSarcasm(Model, trainFile):
 	train_labels = np.asarray( labels[ : math.floor( len(labels) * 0.7 ) ] )
 	test_labels = np.asarray( labels[ math.floor( len(labels) * 0.7 ) + 1 : ] )
 
+	train_subreddit = np.asarray( subreddit[: math.floor( len(comment_vectors) * 0.7 ) ] )
+	test_subreddit = np.asarray( subreddit[ math.floor( len(comment_vectors) * 0.7 ) + 1 : ] )
+
+	updown = list()
+	for u, d in zip(ups, downs):
+		updown.append( (u, d) )
+	# updown = np.asarray(updown)
+	train_updown = np.asarray( updown[: math.floor( len(updown) * 0.7 ) ] )
+	test_updown = np.asarray( updown[ math.floor( len(updown) * 0.7 ) + 1 : ] )
+
+	print(np.shape(updown))
 	print (np.shape( train_comments ))
 	print (np.shape(test_comments))
 	print (np.shape(train_labels))
@@ -108,46 +119,55 @@ def trainSarcasm(Model, trainFile):
 
 	# code adapted from tutorial at https://github.com/tensorflow/hub/blob/master/examples/colab/tf2_text_classification.ipynb
 	
-	
 	print("starting keras")
 	
 	#model used to create embeddings for sentences
-	# model = "https://tfhub.dev/google/tf2-preview/gnews-swivel-20dim/1"
-	# model = "https://tfhub.dev/google/tf2-preview/nnlm-en-dim50/1"
+
 	embeddings = "https://tfhub.dev/google/tf2-preview/gnews-swivel-20dim-with-oov/1"
 	# input layer
 	hub_layer = hub.KerasLayer(embeddings, output_shape=[20], input_shape=[], dtype=tf.string, trainable=True)
+	hub_layer_1 = hub.KerasLayer(embeddings, output_shape=[20], input_shape=[], dtype=tf.string, trainable=True)
+
 	# hub_layer(train_comments[:3])
 
 	# setting up keras model
 	model = tf.keras.Sequential()
 	model.add(hub_layer)
 	model.add(tf.keras.layers.Dense(16, activation='relu'))
-	model.add(tf.keras.layers.Dense(1, activation='sigmoid'))
+	model.add(tf.keras.layers.Dense(4, activation='relu'))
+	# model.add(tf.keras.layers.Dense(1, activation='sigmoid'))
 
-	# inputB = keras.Input()
-	# x = keras.Dense(8, activation="relu")(inputB)
+	# #train on subreddits here
+	# model_s = tf.keras.Sequential()
+	# model_s.add(hub_layer_1)
+	# model_s.add(tf.keras.layers.Dense(16, activation='relu'))
+	# # model_s.add(tf.keras.layers.Dense(1, activation='sigmoid'))
+
+	model_inout = tf.keras.Sequential()
+	model_inout.add(tf.keras.layers.Dense(4, activation='relu', input_shape=(2,)))
+
+	mergedOut = keras.layers.Add()([model.output, model_inout.output])
+	mergedOut_1 = keras.layers.Dense(8, activation='relu')(mergedOut)
+	mergedOut_2 = keras.layers.Dense(1, activation='sigmoid')(mergedOut_1)
+
+	final_model = keras.models.Model( [model.input, model_inout.input], mergedOut_2 )
 
 	# prints a summary of the layers of the NN
-	model.summary()
+	final_model.summary()
 
-	model.compile(optimizer='adam',
+	final_model.compile(optimizer='adam',
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-	# set aside 10000 comments and labels for validation
-	x_val = train_comments[:10000]
-	partial_x_train = train_comments[10000:]
-	y_val = train_labels[:10000]
-	partial_y_train = train_labels[10000:]
+
 
 	# train the model
 	# low number of epochs for testing
-	history = model.fit(partial_x_train,
-                    partial_y_train,
+	history = final_model.fit([train_comments, train_updown],
+                    train_labels,
                     epochs=6,
                     batch_size=512,
-                    validation_data=(x_val, y_val),
+                    validation_data=([test_comments, test_updown], test_labels),
                     verbose=1)
 	
 	history_dict = history.history
@@ -182,12 +202,26 @@ def trainSarcasm(Model, trainFile):
 
 	plt.show()
 
+	model = final_model
 
 def testSarcasm(comment):
 
+	# exit()
+	# quit()
+
 	#need to pass a nparray to predict
 	temp_list = list()
-	temp_list.append(comment["comment"])
-	temp_np = np.asarray(temp_list)
+	temp_list_2 = list()
 
-	return model.predict_classes(temp_np)
+	temp_list.append(comment["comment"])
+	temp_list_2.append((comment["ups"], comment["downs"] ))
+	temp_np = np.asarray(temp_list)
+	temp_np_2 = np.asarray(temp_list_2)
+
+
+
+	val = model.predict( [temp_np, temp_np_2] )
+	if val[0] > 0.5:
+		return True
+	else:
+		return False
