@@ -1,5 +1,4 @@
 CALLING YOUR trainSarcasm() FUNCTION
-Time to execute was 418 seconds; this is too long (-10 points)
 
 
 TESTING ON INPUT PROBLEM:
@@ -22,8 +21,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "If you know how to drive then you shouldnt need headlights.", "author": "nate54o", "subreddit": "Sacramento", "ups": -1, "downs": -1, "parent_comment": "Friendly reminder If you are using windshield wipers, your headlights must be on. It's the law."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -46,8 +45,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Shhh he'll be back in OG soon enough.", "author": "Mason7900", "subreddit": "CoDCompetitive", "ups": -1, "downs": -1, "parent_comment": "This is just a thought, need your opinions."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -70,8 +69,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Tumblr", "author": "KPIH", "subreddit": "AskReddit", "ups": -1, "downs": -1, "parent_comment": "Redditors, what gave you PTSD?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -110,8 +109,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "It's his fucking house you moron, he can do what he likes with it.", "author": "ParadoxZerg", "subreddit": "pcgaming", "ups": -1, "downs": -1, "parent_comment": "Couldn't that guy just quit instead of taking down the whole house with him?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -150,8 +149,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Particularly on US college campuses.", "author": "Wanderer360", "subreddit": "worldnews", "ups": -1, "downs": -1, "parent_comment": "UN Report: Free expression under worldwide assault"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	False
-Correct!
+	True
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -198,16 +197,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Who has time for friends?", "author": "cclites", "subreddit": "Entrepreneur", "ups": 1, "downs": 0, "parent_comment": "Does anyone else drive their friends crazy talking about business stuff? I work from home doing content creation, online marketing, product sales etc for the websites that I have developed. As I have been getting more involved with this line of work I have found my friends less and less interested about the stuff I am working on. I just can't seem to stop thinking about it (and talking about it). The rabbit hole goes so deep in terms of how an entrepreneur can make money online and I would love to talk to others who have established online businesses and enjoy discussing the details of what they do and how they do it. Sadly, the people I know offline have zero interest in the internet over and above cat pictures and facebook. This post is to potentially meet like minded people who work online. This year I took a month and went to Vietnam solo (im Canadian) just because I had the availability to do so. Working online is my second career after one lifetime in a technical trade. I wish I knew other people doing similar things to what I do. Do you?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "Don't drink the Kool-Aid either.", "author": "Pasakoye", "subreddit": "todayilearned", "ups": -1, "downs": -1, "parent_comment": "TIL It was \"\"Flavor Aid,\"\" not \"\"Kool-Aid\"\" that poisoned the suicidal members of the Jonestown Massacre, an incident which gave us the phrase \"\"don't drink the Kool-Aid.\"\""}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -230,8 +229,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "i suggest you start smoking to feel better about it", "author": "Kevin-96-AT", "subreddit": "AskEurope", "ups": -1, "downs": -1, "parent_comment": "Was kind of trying to forget all that. Though I do predict some alcohol with my grouse. And then the next day a grouse about all the alcohol I drank."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -246,8 +245,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "I've been having unreal fun with the Lawrence of Arabia Lee Enfield, whatever it's called in this game.", "author": "KilledTheCar", "subreddit": "Battlefield", "ups": -1, "downs": -1, "parent_comment": "Favorite fun so far?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -262,16 +261,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Scotland's poppies on their armbands were slightly larger than ours, that must be it", "author": "StalkingYouMate", "subreddit": "soccer", "ups": -1, "downs": -1, "parent_comment": "They were both wearing the same fecking armbands. Surely if one is guilty the other must be too."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "He might need a trusted friend.", "author": "SanicScoot", "subreddit": "tf2", "ups": -1, "downs": -1, "parent_comment": "it's me your long lost brother"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -286,8 +285,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Why do you think the Clinton's have been murdering them?", "author": "RellenD", "subreddit": "hillaryclinton", "ups": 4, "downs": 0, "parent_comment": "So in other words, potential future Presidents endorsing Hillary?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -350,8 +349,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "If only he stopped getting his jersey from the Children's Gap.", "author": "97EchoEcho", "subreddit": "miamidolphins", "ups": 9, "downs": 0, "parent_comment": "So uh, Alonso the way better player from that trade?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -406,8 +405,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Step 0 is having Blizz not intervene and shut your ass down before you can say YoggSaron", "author": "GGNydra", "subreddit": "hearthstone", "ups": 21, "downs": 0, "parent_comment": "Step 2 find a way so discover or any other effect like it does not create a \"\"banned\"\" card"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -438,16 +437,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Or play competitive games where communication is key to winning games... no one's asking you to have a damn conversation.", "author": "Whatever_It_Takes", "subreddit": "Overwatch", "ups": -1, "downs": -1, "parent_comment": "If I wanted to talk to strangers online, I would go omegle"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "One size fits all serves us so well.", "author": "daveburnt", "subreddit": "canadaguns", "ups": -1, "downs": -1, "parent_comment": "It's a federal one. Firearms are under federal juristiction so even though CFOs are assigned to a specific province they are appointed by the federal government."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	False
-Incorrect
+	True
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -478,8 +477,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Don't care what anyone says, this wonderful gift to soccer sent from the heavens is incomparable.", "author": "SalBruh_", "subreddit": "soccer", "ups": -1, "downs": -1, "parent_comment": "Alba Goal against Espanyol (3-0)"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -518,8 +517,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Demon Firesage, running at you with dat ass", "author": "iminnocentpls", "subreddit": "darksouls", "ups": -1, "downs": -1, "parent_comment": "Most Badass Boss Entrances Out of any boss in the series, which one had the most epic opening or entrance that got you so pumped up to fight it? The Penetrator from Demon's Souls is my first choice. All throughout Boletaria you chase after the fire spamming nice-guy fedora wearing fat fuck minister and upon walking through that fog gate you're greeted with his dumb chuckling ass getting kabob'd by the Penetrator's Penetrating Penetrator. Most satisfying thing ever, I didn't even wanna kill the boss at that point, I wanted to take him out to the local bar and get smashed while we laugh at the hilarious death of the blubbery penguin waddling piece of shit. Nothing will top that for me. An honourable mention would be Capra Demon to be honest. There's no actual cutscene before it, but you're not allowed to take a fucking breath before the satan spawn and his twin demon dick mutts come and rock your world. I respawned at the bonfire and sat there for 5 minutes wondering what the hell just happened. Not the greatest or most enjoyable moment in the game but definitely a very memorable one."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -534,16 +533,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Krypton blew up dude why would there be news about it", "author": "Isthisgoodenoughyet", "subreddit": "DC_Cinematic", "ups": 2, "downs": 0, "parent_comment": "Wishlist: - Shifting of the slate. Shazam could get released earlier as has been hinted at, and hopefully GLC will get moved up. Possible replacement of Cyborg. Confirmation of the two unnamed movies (MoS and Batman, hopefully, though I could see Lobo or SS 2 taking up one of the slots). - Wonder Woman teaser. I don't think there will be a SS one, as it seems that the Blitz trailer is supposed to be the final trailer, with only TV spots and promos from here. - Justice League group photo (Hopefully with Green Lantern. If not, expect to see a rant post from me) - JL Q&amp;A - Shazam, possibly Green Lantern casting confirmation - News on Krypton"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "Im criticising them for changing the point with different facts that skew toward their narrative!", "author": "38thdegreecentipede", "subreddit": "politics", "ups": 0, "downs": 0, "parent_comment": "Are you actually criticizing him for using facts to support his arguement?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -574,16 +573,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "She might the surgery, learn to read dumbass.", "author": "Kitty-Litterer", "subreddit": "Tgirls", "ups": 7, "downs": 0, "parent_comment": "What?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "When you upgrade to 10 you get a generic key, so how can that be transferred across to a new computer past the July deadline?", "author": "duckduckwhoa", "subreddit": "windows", "ups": 1, "downs": 0, "parent_comment": "You don't lose that. Get your key and install it in your new computer. It will have you call Microsoft to active the new pc. That's it. The previous PC will lose the right to the key and it will stay with your new one. Source: did that many times"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -606,8 +605,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Get some sk8 hi's", "author": "ToasterLogic", "subreddit": "streetwear", "ups": 1, "downs": 0, "parent_comment": "Ya I know they are not the nicest but as my other comment said I just got into streetwear (like days ago) and I havent had the chance to pickup any shoes. The Nikes I've had for a while now. What sort of shoes would you recommend with it?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -686,16 +685,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "\"\"You can't be sad because someone has it worse\"\" is like \"\"you can't be happy because someone has it better\"\"", "author": "rkd2008", "subreddit": "AskReddit", "ups": 1, "downs": 0, "parent_comment": "What cliche saying do you hate the most? Why?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "I like the links name \"\"when she finally gets her period\"\"", "author": "Yello-", "subreddit": "gifs", "ups": 1, "downs": 0, "parent_comment": "Let there be bro"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -750,16 +749,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Or maybe he just uses Google Chrome", "author": "amahoori", "subreddit": "GlobalOffensive", "ups": 4, "downs": 0, "parent_comment": "Video or photo editing maybe? Maybe he is a .NET developer. VS uses ram like a motherfucker"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "oh yeah thank god it was only 25%", "author": "dont_forget_canada", "subreddit": "The_Donald", "ups": 1, "downs": 0, "parent_comment": "Seriously the whole city did not burn 20-25% estimate."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -782,8 +781,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "We're like frogs in a frying pan", "author": "sixstringartist", "subreddit": "Economics", "ups": 5, "downs": 0, "parent_comment": "This hits home for me. I abandoned a career in climate science after my master's because it was just too depressing. I hope my grandkids won't be too ashamed of me. It will take some giant event or a series of them for people to get scared enough to demand that their government s do what is required. Until then I think any well intentioned preventive or reactive efforts won't come close."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -830,8 +829,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "The harlem shake", "author": "Madusch", "subreddit": "AskReddit", "ups": 1, "downs": 0, "parent_comment": "What's the dumbest fad currently ongoing?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -870,8 +869,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Fundamentalism?", "author": "joshuastarlight", "subreddit": "politics", "ups": 4, "downs": 0, "parent_comment": "Like what?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -902,8 +901,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Personally I don't fuck with any animal that's 10 times my weight.", "author": "DrinkMuhRichCum", "subreddit": "funny", "ups": 69, "downs": 0, "parent_comment": "Although I don't know the context so it is possible he was pretty seriously injured...he is extremely lucky he didn't die or get stuck with a very very serious injury. If it had hit his jaw directly he would have almost certainly shattered it. I've been around horses, so this just seems so crazy to me. Even for people who haven't been around horses, isn't it common knowledge not to come up right behind one that isn't expecting it, let alone actually try to bother it?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -918,8 +917,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "I'm so reddit proofed that I expected them to be just taxi cabs on fire.", "author": "Ceolanmc", "subreddit": "funny", "ups": 1, "downs": 0, "parent_comment": "I hear Uber's got their own calendar and it's cheaper and they deliver it to you."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -950,16 +949,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Where are the headsets the coaches wear, how are they getting calls and talking to other coaches?", "author": "donnyrkj", "subreddit": "falcons", "ups": 1, "downs": 0, "parent_comment": "Game Thread: Atlanta Falcons @ San Fransisco 49ers"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "thats disease called megalomania or mania...(one of these or hes trolling)", "author": "BabyRager", "subreddit": "cringepics", "ups": 1, "downs": 0, "parent_comment": "Do these kinds of guys have no self awareness? How do you even get to this point? I just don't know"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -990,8 +989,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Vintage wade", "author": "thomki", "subreddit": "nba", "ups": 4, "downs": 0, "parent_comment": "Wade does what Wade's been doing his whole career"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1006,16 +1005,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Worms your method doesnt even work for you", "author": "LongtimeLurkersacc", "subreddit": "MaddenUltimateTeam", "ups": 1, "downs": 0, "parent_comment": "If you are 87 ovr you must be able to have some players to sell and buy more packs this weekend :)"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "Yeah, I was gonna say an Envelope filter or some sort of Wah.", "author": "RedditConsciousness", "subreddit": "DnB", "ups": 1, "downs": 0, "parent_comment": "some sort of auto-wah, or a modulated low-pass filter"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -1094,8 +1093,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Oy vey kill?", "author": "GhostOfBrandeis", "subreddit": "GamerGhazi", "ups": 4, "downs": 0, "parent_comment": "We need a tag for whenever Overkill does something dumb. I vote for \"\"Oh, verkill!\"\""}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -1110,8 +1109,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "we are being brigaded by r smashbros quick post wombo combo memes", "author": "MegaYanm3ga", "subreddit": "fireemblem", "ups": 1, "downs": 0, "parent_comment": "U/Gimli-Chan exposed. (Another otaku loser)"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1126,16 +1125,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "They spelled Realised wrong.", "author": "Omar310", "subreddit": "Megaten", "ups": 1, "downs": 0, "parent_comment": "So did Atlus USA attempt making a slogan?"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "Just like Robert Reich too, huh?", "author": "cyanblur", "subreddit": "politics", "ups": 2, "downs": 0, "parent_comment": "Unfortunately Bernie, like Elizabeth Warren, is clueless when it comes to economics. I still like them both as people though."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1158,16 +1157,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "First time I heard of this streamer, seems rude wouldn't watch.", "author": "Noobienoobnoob", "subreddit": "GlobalOffensive", "ups": 5, "downs": 0, "parent_comment": "not even because of this, but i don't know how anyone likes this kid."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "Chup madrasi", "author": "biharijanata", "subreddit": "india", "ups": 0, "downs": 0, "parent_comment": "Patriarchial festivals like Rakhi, karva-chauth, ghoonghat - all this fascination about *protecting* woman, women being \"\"family honour\"\", yet it is considered ok to harass women you are not related to. The stubborn refusal to learn non-hindi language &amp; expecting others to learn hindi ! Inability to tell the capitals of South Indian states - or even the major languages there !"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1182,8 +1181,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "The OP states it was Reign of Chaos, Allstars was Frozen Throne.", "author": "DashwoodIII", "subreddit": "DotA2", "ups": 6, "downs": 0, "parent_comment": "I should check that out. My idea was old Pudge from 5.xx"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -1302,8 +1301,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Feminists will be pissed", "author": "CrashedonMars", "subreddit": "worldnews", "ups": -1, "downs": 0, "parent_comment": "IS mutilate and kill mum in broad daylight for breastfeeding in public"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1318,8 +1317,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "You ain't working hard enough, pull up your socks and work harder, sleep at your desk if you have to...", "author": "Joeybada33", "subreddit": "unitedkingdom", "ups": 3, "downs": 0, "parent_comment": "As a graduate, theres nothing more depressing than seeing the average graduate salary and realising yours is well below that. I suppose someone has to bring the average down!"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1342,8 +1341,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Only for some.", "author": "raziphel", "subreddit": "AskMen", "ups": -1, "downs": 0, "parent_comment": "it is in real life"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -1358,8 +1357,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "And Christians", "author": "sqqueen", "subreddit": "offmychest", "ups": 1, "downs": 0, "parent_comment": "but don't you know? straight white men have it the worst? they're the most discriminated against."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1438,8 +1437,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Which is why you vote UKIP.", "author": "Thekdawggg", "subreddit": "thatHappened", "ups": 8, "downs": 0, "parent_comment": "One brave citizen stops a Daily Mail reporter on the street with her election fears"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1486,16 +1485,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Angry Birds \"\"voted\"\" best game in existence.", "author": "Celeri", "subreddit": "gaming", "ups": 9, "downs": 0, "parent_comment": "by your logic, most mobile games are like the best games ever, cuz look how many people play them."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "Dont forget the Russian version has 150 octane fuel as well", "author": "Deathwish1909", "subreddit": "Warthunder", "ups": 21, "downs": 0, "parent_comment": "Shunna dun dat, Gaijin hotfix nerf incoming...either that or they will give Russia access to a 45mm Hurricane mk IV as a very cheap premium plane so they can seal club too but slightly better."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1550,8 +1549,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "You ARE the asshole of the group", "author": "AltasLoL", "subreddit": "CivilizatonExperiment", "ups": 2, "downs": 0, "parent_comment": "I can be the asshole of the group"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1566,16 +1565,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "You meant a Steve Blake highlight reel", "author": "cambrizzle", "subreddit": "nba", "ups": 6, "downs": 0, "parent_comment": "One of the more entertaining highlights from a young big this season, IMO, Meyers Leonard highlights"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "Oh, I knew what it would probably do, but I intentionally made the logic super obfuscated, so it was hard to figure out.", "author": "newbiedoodle", "subreddit": "ProgrammerHumor", "ups": 2, "downs": 0, "parent_comment": "That you didn't know what it would do before you ~~com~~*sub*mitted it, somehow just makes it even more convincing that you really are a programmer."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -1590,8 +1589,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "This is so fake.", "author": "thetuftofJohnPrine", "subreddit": "tifu", "ups": 1, "downs": 0, "parent_comment": "TIFU when I saw my friends sister This literally just happened. I was walking to the spot I normally stand at on the train platform but I didn't have my contacts in so my vision/depth perception wasn't very good. I hear someone say hi so I turn to look as I'm walking and I see my friends sister with her arms outstretched. In my head I'm like oh alright she wants a hug, so I go in and give her a hug. I thought it felt kind of strange, like she wasn't really hugging back so I end the hug and back up to look at her. At this point I realize a) that it wasn't my friends sister but a random woman waiting for the train and b) she was extending her arms to someone who was behind me, who I noticed after the hug. They both looked pretty horrified so I didn't even really try to explain myself, I kind of just walked away without saying anything. TL;DR: went in for a hug, ruined someone's morning"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1638,8 +1637,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Give them to an old person to smoke, they probably have no taste buds anyway", "author": "burnmyiz", "subreddit": "cigars", "ups": 9, "downs": 0, "parent_comment": "What to do with dog turds? Like so many noobs, I bought a bunch of low-cost cigars as 'humidor fillers' when I was first starting out. 5 packs, samplers, no-named Dominican rubbish... you know the type. Most of them are sub-par at best, and I really have no desire to smoke any of them at this point. Thinking that maybe I'd just power through them I tried to smoke one the other day and had to put it down after about 5 minutes because of strong ammonia flavours. So there are about 25 of these things just sitting in my wineador taking up valuable space, and I have no idea what to do with them. I'd give them away, but seriously, who would want them? So what have you guys done with your un-smokable noob purchase mistakes? I'd love to hear your stories, ideas, and suggestions. Cheers!"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1702,16 +1701,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "I will streak across the cotton bowl during the red river rivalry of the Big 12 adds UConn", "author": "wafflesnsyrup", "subreddit": "CFB", "ups": 1, "downs": 0, "parent_comment": "I don't know the veracity of any of this, but still an interesting read on potential Big 12 expansion."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "If you aren't frank senatra it probably won't work.", "author": "Beethovens5thofvodka", "subreddit": "fatpeoplehate", "ups": 14, "downs": 0, "parent_comment": "If I had the money I'd buy very nice tailored suite and a fedora/trilby that actually went with it, just so I could take that, too"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -1742,8 +1741,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "concealed carry permit laws are about as stupid as drug tax stamp laws.", "author": "RollRight_RollCall", "subreddit": "politics", "ups": 3, "downs": 0, "parent_comment": "Kansas to allow carrying of concealed guns without permit - When the law takes effect July 1, Kansas will become the fifth state where gun owners won't need a permit to carry a concealed weapon. The training requirement for concealed weapon carriage has also been removed."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	False
-Correct!
+	True
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1806,8 +1805,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Where's the profit in that?", "author": "The_Time_Master", "subreddit": "worldnews", "ups": 0, "downs": 0, "parent_comment": "It's quite sad how we are too busy worrying about each other when we should be helping each other out and working together"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -1846,8 +1845,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "He is trying to get swole", "author": "Landwhaleson", "subreddit": "fatpeoplehate", "ups": 1, "downs": 0, "parent_comment": "5 minutes of low intensity cardio followed by 40 minute recovery time. BeachBlobby coach in training."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -2014,8 +2013,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Who doesn't love sloppy drunk oral?", "author": "MySafewordIsCacao", "subreddit": "creepyPMs", "ups": 6, "downs": 0, "parent_comment": "Tales from the Filtered Folder pt. II"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -2062,8 +2061,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "No, I'd rather live in a society where the only access children have to automatic weaponry is at school, where they learn to disassemble for cleaning and reloading magazines instead.", "author": "Sachyriel", "subreddit": "AskReddit", "ups": 0, "downs": 0, "parent_comment": "Do we want/need to live in such a society? Ps. My personal answer: good idea of there is a zombie Apocalypse."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -2094,8 +2093,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Praise be to lord Nolan!", "author": "A_Fish_Called_Walter", "subreddit": "movies", "ups": 3, "downs": 0, "parent_comment": "Take comic book movies for example..... I hate 90% of anything to do with comic book movies, the movies, the fans, everything. My question is... Why do they not try and take path similar to chris nolan. Everything In the dark knight felt so real,,, (It wasn't but you know what i mean) Chris nolans dark knight trilogy has more logic in one scene than any marvel movie. Everything in comic book movies make say \"\"wtf was that, why no just do that, or why not just avoid that, why does she have to talk like that, why not just speak like a normal person\"\" In the dark knight every scene is like a poem. The scenes tough scenes are so intense . the funny scenes are funny. the sad scenes are funny, I re-watched the dark knight rises the other day. And i almost cried at the end. Why cant other comic book movies have the same type of effect. why cant i care about spiderman not having a father or man of steel. My point is....I hate turning off my brain to enjoy a movies.. I watched the winter solder yesterday. I skipped almost every scene. Its like wow,,, did i not see this same scene in spiderman, or iron man. I hate watching a movie and keep asking myself why the characters are doing what they are doing. There is no purpose for the hero to save people. He just does it because the script says \"\"then the hero returns to save the world\"\" I am jumping off the point. ps I know I will get a lot of hate from this,,,, I always do. its rare to find other people who look at movies different. They all give me the same response. \"\"its just a movie\"\" the only comic book movies I would be happy to defend are - the dark knight trilogy, days of future past, and the old spiderman. And 5% of ironman 1."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -2254,8 +2253,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Is it not a picture of Glenn Beck?", "author": "amcdermott20", "subreddit": "WTF", "ups": 1, "downs": 0, "parent_comment": "Looks like Glenn Beck."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -2278,8 +2277,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "It's better that a few innocents suffer or die so that none of the guilty escape punishment, right?", "author": "spaceghoti", "subreddit": "politics", "ups": 5, "downs": 0, "parent_comment": "Study suggests that 4% of the people we put on death row are innocent - Rates are likely even higher for innocents sentenced to life in prison"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -2366,16 +2365,16 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Yeah when I'm reading a good build for a champion on lol i can't help but get hard", "author": "overlykilled", "subreddit": "creepyPMs", "ups": 13, "downs": 0, "parent_comment": "Guild Wars 2 build discussions takes an unexpected turn for the creepy"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
 	{"comment": "With each Chick-fil-A post I give one fuck less about gay rights.", "author": "6offender", "subreddit": "atheism", "ups": -6, "downs": 0, "parent_comment": "Browsing this subreddit lately..."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	False
-Correct!
+	True
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -2430,8 +2429,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Sounds like utopia.", "author": "daveguy", "subreddit": "singularity", "ups": 2, "downs": 0, "parent_comment": "I want to see breeding outlawed and bound to a quota. Only parents that can yield genetically healthy infants and a financially secure parenting *might* meet the quotum. And then I think every vaguely prospective parent should pass an extremely difficult 6 month parenting course. Everyone else should go to prison when they breed out of licencing, fined a few 10.000 $/E and their baby taken away from them. Putting defective human beings on this planet **knowingly** is worse than child abuse - *you should be sued for causing a severe public nuisance*."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -2454,8 +2453,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "thats a nark", "author": "Narit", "subreddit": "trees", "ups": 0, "downs": 0, "parent_comment": "I'm not referring to a narcotics officer. I didn't realize people would it interpret it that way, hah. I guess I always thought of it as a term for a person who adamantly denounces the usage and idea of the substance. Someone who'd frown upon you for using it"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Incorrect
+	False
+Correct!
 
 
 TESTING ON INPUT PROBLEM:
@@ -2510,8 +2509,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "there's an American version?", "author": "audiomodder", "subreddit": "AskReddit", "ups": 1, "downs": 0, "parent_comment": "I think we need to specify Top Gear UK here. The US and other countries versions are shit. Nothing can replace Jezza, Hampster, and Capt. Slow."}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -2566,8 +2565,8 @@ TESTING ON INPUT PROBLEM:
 	{"comment": "Definitely witchcraft.", "author": "PerfectlyRational", "subreddit": "woahdude", "ups": 2, "downs": 0, "parent_comment": "What is this witchcraft?!"}
 CORRECT OUTPUT:
 YOUR OUTPUT:
-	True
-Correct!
+	False
+Incorrect
 
 
 TESTING ON INPUT PROBLEM:
@@ -2593,9 +2592,8 @@ YOUR OUTPUT:
 	True
 Correct!
 
-You got 72.8395061728395% correct: +109.4650205761317/100 points
-After penalties: 99.4650205761317
+You got 67.90123456790124% correct: +93.00411522633746/100 points
 =============================
 =======  FINAL GRADE  =======
 =============================
-99.4650205761317 / 100
+93.00411522633746 / 100

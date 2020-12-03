@@ -136,8 +136,8 @@ def trainSarcasm(Model, trainFile):
 	# low number of epochs for time constraints
 	history = final_model.fit([train_comments, train_updown],
                     train_labels,
-                    epochs=100,
-                    batch_size=51200,
+                    epochs=20,
+                    batch_size=5120,
                     validation_data=([test_comments, test_updown], test_labels),
                     verbose=1)
 
